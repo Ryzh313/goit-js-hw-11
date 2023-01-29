@@ -18,7 +18,12 @@
     "url": "https://github.com/Ryzh313/goit-js-hw-11/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "axios": "^1.2.6",
+    "lodash.throttle": "^4.1.1",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.6",
+    "simplelightbox": "^2.12.1",
+    "throttle": "^1.0.3"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
