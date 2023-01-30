@@ -35,8 +35,7 @@ function renderCardImage(cards) {
   gallery.insertAdjacentHTML('beforeend', markup);
 }
 
-let lightbox = new SimpleLightbox('.photo-card a', {
-  captions: true,
+const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
 });
@@ -69,9 +68,11 @@ async function onSubmitSearchForm(e) {
     if (response.totalHits > 0) {
       Notify.success(`Hooray! We found ${response.totalHits} images.`);
       gallery.innerHTML = '';
-      renderCardImage(response.hits);      
-
+      renderCardImage(response.hits);  
+      
       lightbox.refresh();
+
+      // lightbox.refresh();
       endCollectionText.classList.add('is-hidden');
 
       const { height: cardHeight } = document
