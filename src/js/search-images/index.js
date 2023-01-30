@@ -69,7 +69,8 @@ async function onSubmitSearchForm(e) {
     if (response.totalHits > 0) {
       Notify.success(`Hooray! We found ${response.totalHits} images.`);
       gallery.innerHTML = '';
-      renderCardImage(response.hits);
+      renderCardImage(response.hits);      
+
       lightbox.refresh();
       endCollectionText.classList.add('is-hidden');
 
