@@ -67,7 +67,7 @@ li {
   align-items: center;
   justify-content: center;
 
-  padding: 25px 0 25px 0;
+  padding: 10px;
 
   background: #fafafa;
   background: linear-gradient(to right, #ffffff, #000000);
@@ -75,8 +75,13 @@ li {
 }
 
 .search-form__input {
-  width: 180px;
-  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+
+  width: 300px;
+  border-radius: 5px;
+  border: none;  
   padding: 10px;
 
   font-size: 16px;
@@ -88,7 +93,7 @@ li {
 
   &::placeholder {
     font-size: 16px;
-    color: #fafafa;
+    color: #aaaaaa;;
   }
 
   @media screen and (min-width: $tablet) {
@@ -126,13 +131,6 @@ li {
   }
 }
 
-
-.search-form {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(200, 200, 200);
-  padding: 10px;  
-}
 
 .search-form input {
   padding: 10px;
