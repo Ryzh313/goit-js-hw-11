@@ -20,12 +20,16 @@
         autocomplete="off"
         placeholder="Search images..."
       />
-      <button class="search-form__button" type="submit">Search</button>
+      <button class="search-form__button" type="submit" onclick="this.blur();">
+        Search
+      </button>
     </form>
 
     <div class="container">
       <div class="gallery"></div>
-      <button type="button" class="load-more is-hidden">Load more</button>
+      <button type="button" class="load-more is-hidden" onclick="this.blur();">
+        Load more
+      </button>
       <p class="end-collection-text is-hidden">
         We're sorry, but you've reached the end of search results.
       </p>
